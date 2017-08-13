@@ -1,0 +1,212 @@
+html, body {
+  height: 100%;
+  background: white;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+.parallax {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax1 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513309/tarantula-nebula-1245253_1280_swtjfb.jpg");
+}
+
+.parallax2 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513308/space-2578118_1920_rsojfw.jpg");
+}
+
+.parallax3 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513312/galaxy-1844995_1920_rxdbxk.jpg");
+}
+
+.parallax4 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513311/galaxy-1082185_1920_jozrim.jpg");
+}
+
+.hello-panel, .info-panel, .works-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: white;
+  height: 60%;
+  width: 100%;
+}
+
+.hello-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  text-align: center;
+}
+
+.my-picture {
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+}
+
+.logo {
+  position: fixed;
+  margin: auto;
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 8%;
+  width: 400px;
+  height: 50px;
+  background: grey;
+  top: 2%;
+  overflow: hidden;
+  z-index: 3;
+  transition: all .1s linear;
+  left: 8%;
+}
+
+.logo .bottom {
+  position: absolute;
+  background: #008b8b;
+  height: 8px;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.logo .top {
+  position: absolute;
+  background: #008b8b;
+  height: 8px;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+}
+
+.logo .line-left {
+  position: absolute;
+  background: #008b8b;
+  width: 8px;
+  height: 70%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.logo .line-right {
+  position: absolute;
+  background: #008b8b;
+  width: 8px;
+  height: 70%;
+  top: 0%;
+  right: 0%;
+}
+
+.logo .text {
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 50px;
+}
+
+.logo .text .my-career {
+  font-size: 25px;
+}
+
+.icons {
+  position: fixed;
+  margin: auto;
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 8%;
+  width: 170px;
+  height: 50px;
+  background: grey;
+  top: 2%;
+  overflow: hidden;
+  z-index: 3;
+  transition: all .1s linear;
+  right: 8%;
+}
+
+.icons .bottom {
+  position: absolute;
+  background: #008b8b;
+  height: 8px;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.icons .top {
+  position: absolute;
+  background: #008b8b;
+  height: 8px;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+}
+
+.icons .line-left {
+  position: absolute;
+  background: #008b8b;
+  width: 8px;
+  height: 70%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.icons .line-right {
+  position: absolute;
+  background: #008b8b;
+  width: 8px;
+  height: 70%;
+  top: 0%;
+  right: 0%;
+}
+
+.icons .fa {
+  font-size: 22px;
+  line-height: 50px;
+  color: #363637;
+}
+
+.mobile-icons {
+  font-size: 30px;
+}
+
+.top-icons {
+  color: #363637;
+}
+
+.left {
+  width: 56px;
+  left: 1%;
+}
+
+.right {
+  width: 56px;
+  height: 200px;
+  right: 1%;
+}
+
+.height {
+  height: 90%;
+}
