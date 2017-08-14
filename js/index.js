@@ -7,13 +7,13 @@ $(document).ready(function() {
     $(".mobile").show();
   } else {
     $(document).scroll(function() {
-      $(".text").html("_A");
+      $(".text").html("_J");
       $("#boxer").addClass("left");
       $("#icon-animation").addClass("right");
       $(".1").addClass("height");
       scroll_pos = $(this).scrollTop();
       if (scroll_pos === 0) {
-        $(".text").html("_Alberto " + "<span class='my-career'>front-end developer</span>");
+        $(".text").html("_Jaime " + "<span class='my-career'>front-end developer</span>");
         $("#boxer").removeClass("left");
         $("#icon-animation").removeClass("right");
         $(".1").removeClass("height");
