@@ -14,7 +14,7 @@ h1, h2, h3 {
 }
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1334px) {
+@media only screen and (max-device-width: 1920px) {
     .parallax {
         background-attachment: scroll;
     }
