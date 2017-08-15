@@ -20,15 +20,17 @@ h1, h2, h3 {
 }
 
 
-/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed
 @media screen and (max-width: 740px) {
   .parallax {
     background-attachment: scroll;
     background-size: 100%;
   }
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    background: none;
+  }
   .hello-panel, .info-panel, .works-panel {
     flex-direction: column;
-    align-items: center;
     text-align: center;
     height: 100%;
   }
@@ -38,7 +40,7 @@ h1, h2, h3 {
   p {
     text-align: justify;
   }
-}
+} */
 
 .parallax {
   min-height: 100%;
@@ -64,24 +66,34 @@ h1, h2, h3 {
   background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513311/galaxy-1082185_1920_jozrim.jpg");
 }
 
-.hello-panel, .info-panel, .works-panel {
+.hello-panel, .info-panel, .contacts-panel {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   text-align: justify;
   background: white;
-  height: 70%;
-  width: 100%;
+  width: auto;
+  overflow: auto;
+  margin: 50px 20px 50px 20px;
 }
 
 .hello-text {
-  width: 43%;
+  width: 80%;
 }
 
 .my-picture {
   border-radius: 10px;
+  max-width: 100%;
   width: 200px;
+  display: block;
   height: auto;
+}
+
+.works-panel {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
 }
 
 .logo {
