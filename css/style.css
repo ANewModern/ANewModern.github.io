@@ -29,6 +29,11 @@ h1, h2, h3 {
   .hello-panel, .info-panel, .works-panel {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  p {
+    text-align: justify;
   }
 }
 
@@ -62,6 +67,7 @@ h1, h2, h3 {
   justify-content: space-around;
   text-align: justify;
   background: white;
+  overflow: auto;
   height: 70%;
   width: 100%;
 }
