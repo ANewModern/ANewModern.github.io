@@ -13,10 +13,17 @@ h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
 
+@viewport {
+    width: extend-to-zoom 980px;
+    min-zoom: 0.25;
+    max-zoom: 5;
+}
+
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1920px) {
     .parallax {
         background-attachment: scroll;
+        background-size: 100%;
     }
 
     .hello-panel, .info-panel, .works-panel {
@@ -63,7 +70,7 @@ h1, h2, h3 {
   justify-content: space-around;
   text-align: justify;
   background: white;
-  height: 60%;
+  height: 70%;
   width: 100%;
 }
 
