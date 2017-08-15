@@ -32,6 +32,9 @@ h1, h2, h3 {
     text-align: center;
     height: 100%;
   }
+  .hello-text {
+    width: 90%;
+  }
   p {
     text-align: justify;
   }
@@ -67,7 +70,6 @@ h1, h2, h3 {
   justify-content: space-around;
   text-align: justify;
   background: white;
-  overflow: auto;
   height: 70%;
   width: 100%;
 }
