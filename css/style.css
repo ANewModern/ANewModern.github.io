@@ -58,7 +58,6 @@ h1, h2, h3 {
 
 .hello-panel, .info-panel, .works-panel {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-around;
   text-align: justify;
