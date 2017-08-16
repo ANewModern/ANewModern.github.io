@@ -21,21 +21,14 @@ h1, h2, h3 {
 
 
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+
 @media screen and (max-width: 740px) {
   .parallax {
     background-attachment: scroll;
-    background-size: 100%;
-  }
-  .parallax1, .parallax2, .parallax3, .parallax4 {
     background: none;
   }
-  .hello-panel, .info-panel, .works-panel {
-    flex-direction: column;
-    text-align: center;
-    height: 100%;
-  }
   p {
-    text-align: justify;
+    font-size: 13px;
   }
 }
 
@@ -66,11 +59,13 @@ h1, h2, h3 {
 .hello-panel, .info-panel, .photo-panel, .contacts-panel {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   text-align: justify;
   background: white;
   width: auto;
+  max-width: 100%;
   overflow: auto;
   margin: 50px 20px 50px 20px;
 }
@@ -90,25 +85,32 @@ h1, h2, h3 {
 .works-panel {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin: 50px 20px 50px 20px;
 }
 
 .front-end-projects, .back-end-projects {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
   flex-direction: row;
+  padding: 0 15px 0 15px;
 }
 
 .project {
+  background: white;
   width: 300px;
   height: 150px;
   border: 1px solid black;
+  overflow: hidden;
   transition: all .2s ease-in-out;
 }
 
 .project:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
+
 
 /*
 .logo {
