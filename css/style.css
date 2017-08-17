@@ -126,7 +126,7 @@ h1, h2, h3 {
   margin: 50px 20px 50px 20px;
 }
 
-.contacts {
+.contacts, .photo-contacts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -144,7 +144,8 @@ a {
 .photos {
   border: 1px solid black;
   position: relative;
-  transform: scale(.8);
+  transform: scale(.6);
+  -webkit-transform: scale(.6);
 }
 
 .slide {
@@ -154,7 +155,7 @@ a {
 
 .button {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 1);
   color: white;
   top: 50%;
   width: 50px;
@@ -174,7 +175,15 @@ a {
 }
 
 .button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+  transition: all .2s ease-in-out;
+}
+
+.contact:hover {
+  transform: scale(1.2);
 }
 
 /*
