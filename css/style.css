@@ -56,7 +56,7 @@ h1, h2, h3 {
   background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513311/galaxy-1082185_1920_jozrim.jpg");
 }
 
-.hello-panel, .contacts-panel {
+.hello-panel {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -87,6 +87,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
   margin: 50px 20px 50px 20px;
 }
 
@@ -96,7 +97,7 @@ h1, h2, h3 {
   justify-content: space-around;
   align-items: stretch;
   flex-direction: row;
-  padding: 0 15px 0 15px;
+  padding: 15px 15px 15px 15px;
 }
 
 .project {
@@ -122,7 +123,7 @@ h1, h2, h3 {
   background: white;
   width: auto;
   max-width: 100%;
-  overflow: auto;
+  overflow: hidden;
   margin: 50px 20px 50px 20px;
 }
 
@@ -132,7 +133,7 @@ h1, h2, h3 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
-  width: 50%;
+  width: 60%;
   margin: 5px 5px 5px 5px;
   font-size: 37px;
 }
@@ -144,13 +145,11 @@ a {
 .photos {
   border: 1px solid black;
   position: relative;
-  transform: scale(.6);
-  -webkit-transform: scale(.6);
 }
 
-.slide {
-  width: 480px;
-  height: 640px;
+.inner-photos {
+  width: 400px;
+  height: auto;
 }
 
 .button {
@@ -184,6 +183,14 @@ a {
 
 .contact:hover {
   transform: scale(1.2);
+  overflow: hidden;
+}
+
+.contacts-panel {
+  padding-top: 15px;
+  height: 50px;
+  font-family: inherit;
+  text-align: center;
 }
 
 /*
