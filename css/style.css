@@ -56,7 +56,7 @@ h1, h2, h3 {
   background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1502513311/galaxy-1082185_1920_jozrim.jpg");
 }
 
-.hello-panel, .info-panel, .photo-panel, .contacts-panel {
+.hello-panel, .photo-panel, .contacts-panel {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -80,6 +80,7 @@ h1, h2, h3 {
   width: 200px;
   display: block;
   height: auto;
+  margin-top: 10px;
 }
 
 .works-panel {
@@ -111,6 +112,32 @@ h1, h2, h3 {
   transform: scale(1.3);
 }
 
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: justify;
+  background: white;
+  width: auto;
+  max-width: 100%;
+  overflow: auto;
+  margin: 50px 20px 50px 20px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  font-size: 37px;
+}
+
+a {
+  color: black;
+}
 
 /*
 .logo {
