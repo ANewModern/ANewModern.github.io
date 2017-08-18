@@ -215,6 +215,10 @@ a {
   border: 1px solid black;
 }
 
+.level-text {
+  width: 20%;
+}
+
 .html-level {
   width: 75%;
   height: 100%;
