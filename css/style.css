@@ -113,6 +113,16 @@ h1, h2, h3 {
   transform: scale(1.3);
 }
 
+.front-1 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1485308894/backday8_moeyha.png");
+  background-size: cover;
+}
+
+.front-2 {
+  background-image: url("http://res.cloudinary.com/anewmodern/image/upload/v1503026956/2017-08-17-212643_1366x768_scrot_e01ups.png");
+  background-size: cover;
+}
+
 .info-panel, .photo-panel {
   display: flex;
   flex-direction: column;
@@ -193,149 +203,62 @@ a {
   text-align: center;
 }
 
-/*
-.logo {
-  position: fixed;
-  margin: auto;
-  display: block;
-  margin-top: 0%;
-  margin-bottom: 8%;
-  width: 400px;
-  height: 50px;
-  background: grey;
-  top: 2%;
-  overflow: hidden;
-  z-index: 3;
-  transition: all .1s linear;
-  left: 8%;
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo .bottom {
-  position: absolute;
-  background: #008b8b;
-  height: 8px;
-  width: 100%;
-  bottom: 0%;
-  left: 0%;
+.level {
+  width: 90%;
+  height: 20px;
+  border: 1px solid black;
 }
 
-.logo .top {
-  position: absolute;
-  background: #008b8b;
-  height: 8px;
-  width: 100%;
-  top: 0%;
-  right: 0%;
+.html-level {
+  width: 75%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.logo .line-left {
-  position: absolute;
-  background: #008b8b;
-  width: 8px;
-  height: 70%;
-  bottom: 0%;
-  left: 0%;
+.javascript-level {
+  width: 92%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.logo .line-right {
-  position: absolute;
-  background: #008b8b;
-  width: 8px;
-  height: 70%;
-  top: 0%;
-  right: 0%;
+.css-level {
+  width: 88%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.logo .text {
-  font-family: 'Lato', sans-serif;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: left;
-  line-height: 50px;
+.jquery-level {
+  width: 88%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.logo .text .my-career {
-  font-size: 25px;
+.english-level {
+  width: 99%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.icons {
-  position: fixed;
-  margin: auto;
-  display: block;
-  margin-top: 0%;
-  margin-bottom: 8%;
-  width: 170px;
-  height: 50px;
-  background: grey;
-  top: 2%;
-  overflow: hidden;
-  z-index: 3;
-  transition: all .1s linear;
-  right: 8%;
+.spanish-level {
+  width: 95%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.icons .bottom {
-  position: absolute;
-  background: #008b8b;
-  height: 8px;
-  width: 100%;
-  bottom: 0%;
-  left: 0%;
+.german-level {
+  width: 33%;
+  height: 100%;
+  background-color: #B8621F;
 }
 
-.icons .top {
-  position: absolute;
-  background: #008b8b;
-  height: 8px;
-  width: 100%;
-  top: 0%;
-  right: 0%;
+.port-level {
+  width: 3%;
+  height: 100%;
+  background-color: #B8621F;
 }
-
-.icons .line-left {
-  position: absolute;
-  background: #008b8b;
-  width: 8px;
-  height: 70%;
-  bottom: 0%;
-  left: 0%;
-}
-
-.icons .line-right {
-  position: absolute;
-  background: #008b8b;
-  width: 8px;
-  height: 70%;
-  top: 0%;
-  right: 0%;
-}
-
-.icons .fa {
-  font-size: 22px;
-  line-height: 50px;
-  color: #363637;
-}
-
-.mobile-icons {
-  font-size: 30px;
-}
-
-.top-icons {
-  color: #363637;
-}
-
-.left {
-  width: 56px;
-  left: 1%;
-}
-
-.right {
-  width: 56px;
-  height: 200px;
-  right: 1%;
-}
-
-.height {
-  height: 90%;
-}
-*/
