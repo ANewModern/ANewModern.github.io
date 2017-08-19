@@ -211,6 +211,8 @@ a {
 
 .level {
   width: 90%;
+  min-width: 60%;
+  max-width: 90%;
   height: 20px;
   border: 1px solid black;
 }
