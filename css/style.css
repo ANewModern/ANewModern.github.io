@@ -166,6 +166,9 @@ a {
   position: absolute;
   background-color: rgba(0, 0, 0, 1);
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   width: 50px;
   height: 50px;
@@ -173,6 +176,7 @@ a {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  cursor: crosshair;
 }
 
 .left {
@@ -266,4 +270,105 @@ a {
   width: 3%;
   height: 100%;
   background-color: #B8621F;
+}
+
+.name-container {
+  position: fixed;
+  background: transparent;
+  margin: auto;
+  display: block;
+  color: black;
+  left: 11%;
+  top: 13.5%;
+  width: 65px;
+  height: 65px;
+  transition: all .7s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.not-mid {
+  left: 1%;
+}
+
+.color {
+  background: black;
+}
+
+.top-line, .bot-line {
+  position: absolute;
+  width: 115%;
+  height: 5px;
+}
+
+.top-line {
+  top: 0%;
+  right: 0%;
+}
+
+.bot-line {
+  bottom: 0%;
+  left: 0%;
+}
+
+.left-line, .right-line {
+  position: absolute;
+  width: 5px;
+  height: 115%;
+}
+
+.left-line {
+  left: 0%;
+  top: 0%;
+}
+
+.right-line {
+  right: 0%;
+  bottom: 0%;
+}
+
+.inner-box {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  left: 10%;
+  top: 10%;
+  height: 80%;
+  width: 180px;
+}
+
+.immy {
+  font-size: 45px;
+  transition: all .7s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+.left {
+  left: 500px;
+}
+
+.right {
+  right: 500px;
+}
+
+.up {
+  top: 500px;
+}
+
+.bot {
+  bottom: 500px;
+}
+
+.top-line {
+  transition: all 1s cubic-bezier(1,.07,.72,.49);
+}
+
+.left-line {
+  transition: all 1.25s cubic-bezier(1,.07,.72,.49);
+}
+
+.right-line {
+  transition: all 1.5s cubic-bezier(1,.07,.72,.49);
+}
+
+.bot-line {
+  transition: all 1.75s cubic-bezier(1,.07,.72,.49);
 }
