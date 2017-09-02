@@ -66,8 +66,8 @@ h1, h2, h3 {
   background: white;
   width: auto;
   max-width: 100%;
-  overflow: auto;
-  margin: 50px 20px 50px 20px;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
 }
 
 .hello-text {
@@ -86,9 +86,13 @@ h1, h2, h3 {
 .works-panel {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   overflow: hidden;
-  margin: 50px 20px 50px 20px;
+  margin: 10px 0px 10px 0px;
+}
+
+.front-end-works, .back-end-works {
+  padding-left: 10px;
 }
 
 .front-end-projects, .back-end-projects {
@@ -97,7 +101,6 @@ h1, h2, h3 {
   justify-content: space-around;
   align-items: stretch;
   flex-direction: row;
-  padding: 15px 15px 15px 15px;
 }
 
 .project {
@@ -163,7 +166,6 @@ a {
 }
 
 .button {
-  position: absolute;
   background-color: rgba(0, 0, 0, 1);
   color: white;
   display: flex;
@@ -205,6 +207,10 @@ a {
   height: 50px;
   font-family: inherit;
   text-align: center;
+}
+
+.align {
+  padding-left: 10px;
 }
 
 .skill {
@@ -272,21 +278,41 @@ a {
   background-color: #B8621F;
 }
 
+.title-logo {
+  display: flex;
+  align-items: baseline;
+}
+
 .name-container {
-  position: fixed;
-  background: transparent;
-  margin: auto;
+  padding-left: 10px;
+  text-align: center;
   display: block;
-  color: black;
-  left: 11%;
-  top: 13.5%;
-  width: 65px;
-  height: 65px;
-  transition: all .7s cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  position: relative;
+  transition: all 1s cubic-bezier(1,.07,.72,.49);
+  z-index: 100;
+}
+
+.immy {
 }
 
 .not-mid {
+  padding-left: 0px;
+  top: 3%;
   left: 1%;
+  width: 75px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.top-link:link {
+    text-decoration: none;
+    color: black;
+}
+
+.top-link:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .color {
@@ -295,8 +321,8 @@ a {
 
 .top-line, .bot-line {
   position: absolute;
-  width: 115%;
-  height: 5px;
+  width: 130%;
+  height: 10px;
 }
 
 .top-line {
@@ -311,8 +337,8 @@ a {
 
 .left-line, .right-line {
   position: absolute;
-  width: 5px;
-  height: 115%;
+  width: 10px;
+  height: 130%;
 }
 
 .left-line {
@@ -323,22 +349,6 @@ a {
 .right-line {
   right: 0%;
   bottom: 0%;
-}
-
-.inner-box {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  font-size: 45px;
-  left: 10%;
-  top: 10%;
-  height: 80%;
-  width: 180px;
-}
-
-.immy {
-  font-size: 45px;
-  transition: all .7s cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .left {
