@@ -45,16 +45,18 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 15px 10px 15px;
-}
-header .logo-text {
-  display: flex;
-  flex-direction: row;
-}
-header .logo-text #header-text {
-  padding-top: 10px;
-}
-header .logo-text #header-text .name {
-  font-size: 22px;
+
+  .logo-text {
+    display: flex;
+    flex-direction: row;
+
+    #header-text {
+      padding-top: 10px;
+      .name {
+        font-size: 22px;
+      }
+    }
+  }
 }
 
 #logo {
@@ -68,11 +70,9 @@ header .logo-text #header-text .name {
   background: lightgrey;
   border: 2px solid black;
   font-size: 16px;
-  -webkit-transition: background 0.3s;
-  /* Safari */
+  -webkit-transition: background 0.3s; /* Safari */
   transition: background 0.3s;
-  -webkit-transition: color 0.3s;
-  /* Safari */
+  -webkit-transition: color 0.3s; /* Safari */
   transition: color 0.3s;
 }
 
@@ -99,39 +99,41 @@ header .logo-text #header-text .name {
   height: 150px;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-.main-info p {
-  font-size: 20px;
+
+  p {
+    font-size: 20px;
+  }
 }
 
 .projects-small {
   display: block;
   width: 90%;
-}
-.projects-small .project {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 100px;
-  width: 100%;
-  -webkit-transition: height 0.5s;
-  /* Safari */
-  transition: height 0.5s;
-  border: 2px solid black;
-  border-bottom: none;
-}
-.projects-small .project .project-info {
-  background: black;
-  color: whitesmoke;
-  padding: 10px;
-  height: 30px;
-  width: 100%;
-  text-align: center;
-  cursor: pointer;
-}
-.projects-small .project-1 {
-  height: 300px;
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100px;
+    width: 100%;
+    -webkit-transition: height 0.5s; /* Safari */
+    transition: height 0.5s;
+    border: 2px solid black;
+    border-bottom: none;
+
+    .project-info {
+      background: black;
+      color: whitesmoke;
+      padding: 10px;
+      height: 30px;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  .project-1 {
+    height: 300px;
+  }
 }
 
 .projects-large {
@@ -139,36 +141,39 @@ header .logo-text #header-text .name {
   position: relative;
   flex-direction: row;
   width: 67vw;
-}
-.projects-large .project-large {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  align-self: end;
-  width: 5%;
-  height: 800px;
-  -webkit-transition: width 0.5s;
-  /* Safari */
-  transition: width 0.5s;
-  border: 2px solid black;
-  border-right: none;
-}
-.projects-large .project-large .project-info {
-  background: black;
-  color: whitesmoke;
-  padding: 10px;
-  height: 30%;
-  width: 30px;
-  text-align: center;
-  writing-mode: vertical-rl;
-  cursor: pointer;
-}
-.projects-large .project-1-large {
-  width: 90%;
-}
-.projects-large .project-3-large {
-  border-right: 2px solid black;
+
+  .project-large {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-self: end;
+    width: 5%;
+    height: 800px;
+    -webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+    border: 2px solid black;
+    border-right: none;
+
+    .project-info {
+      background: black;
+      color: whitesmoke;
+      padding: 10px;
+      height: 30%;
+      width: 30px;
+      text-align: center;
+      writing-mode: vertical-rl;
+      cursor: pointer;
+    }
+  }
+
+  .project-1-large {
+    width: 90%;
+  }
+
+  .project-3-large {
+    border-right: 2px solid black;
+  }
 }
 
 .project-1,
@@ -205,26 +210,30 @@ header .logo-text #header-text .name {
   justify-content: space-around;
   align-items: center;
   width: 85%;
-}
-.testimonies .testimony {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 50px;
-}
-.testimonies .testimony .quote {
-  font-size: 20px;
-  text-align: justify;
-  padding-bottom: 30px;
-}
-.testimonies .testimony .author {
-  text-align: right;
-  font-size: 18px;
-  align-self: flex-end;
-}
-.testimonies .testimony .company {
-  color: #045f8c;
+
+  .testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+    .quote {
+      font-size: 20px;
+      text-align: justify;
+      padding-bottom: 30px;
+    }
+
+    .author {
+      text-align: right;
+      font-size: 18px;
+      align-self: flex-end;
+    }
+
+    .company {
+      color: #045f8c;
+    }
+  }
 }
 
 .about-me {
@@ -233,9 +242,10 @@ header .logo-text #header-text .name {
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-}
-.about-me p {
-  text-align: justify;
+  
+  p {
+    text-align: justify;
+  }
 }
 
 #profile-picture {
@@ -252,30 +262,34 @@ header .logo-text #header-text .name {
     height: 400px;
     margin-top: 0px;
   }
-
-  #header-text .name {
-    font-size: 30px;
+  #header-text {
+    .name {
+      font-size: 30px;
+    }
+    .header-info {
+      padding-left: 5px;
+    }
   }
-  #header-text .header-info {
-    padding-left: 5px;
-  }
-
   .testimonies {
     margin-top: 100px;
     margin-bottom: 100px;
     width: 700px;
   }
-
+  
   .about-me {
     width: 700px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   main {
     display: grid;
     justify-items: stretch;
     align-items: center;
-    grid-template-areas: "a a b b b b b b" "c c b b b b b b" "d d d d d d d d";
+    grid-template-areas: 
+    "a a b b b b b b"
+    "c c b b b b b b"
+    "d d d d d d d d";
   }
 
   .main-info {
@@ -283,9 +297,10 @@ header .logo-text #header-text .name {
     padding: 50px;
     margin: 0px;
     width: 30vw;
-  }
-  .main-info h1 {
-    font-size: 25px;
+    
+    h1 {
+      font-size: 25px;
+    }
   }
 
   .projects-large {
@@ -296,7 +311,7 @@ header .logo-text #header-text .name {
   .projects-small {
     display: none;
   }
-
+  
   .about-me {
     grid-area: c;
     width: 30vw;
@@ -304,7 +319,7 @@ header .logo-text #header-text .name {
     padding-right: 5vw;
     margin: 0px;
   }
-
+  
   .testimonies {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -314,8 +329,9 @@ header .logo-text #header-text .name {
     margin: 0px;
     margin-top: 100px;
     width: 90vw;
-  }
-  .testimonies .testimony {
-    padding-left: 10vw;
+    
+    .testimony {
+      padding-left: 10vw;
+    }
   }
 }
